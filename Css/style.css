@@ -1,0 +1,852 @@
+body
+{
+    margin: 0px;
+    display: grid;
+    justify-items: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    margin-left: 70px;
+}
+
+.Titulo_Central
+{
+    margin-left: 20px;
+}
+.Titulo_Central h2
+{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.2;
+}
+.Title {
+    color: #00302c;
+}
+
+.Subtitle{
+    color: #009083;
+}
+
+nav{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+.Menu_Button
+{
+    background-color: #2ebf32;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    margin-right: 70px;
+}
+.Menu_Button:hover
+{
+    background-color: #238b28; 
+}
+
+nav ul 
+{
+    display: flex;
+    gap: 100px;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+nav a
+{
+    text-decoration: none;
+    list-style: none;
+    font-size: 26px;
+    color: #00302c;
+}
+
+nav li
+{
+    list-style: none; 
+    padding-top: 4px;
+    font-weight: 900;
+    
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul a {
+    position: relative;
+}
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: #00302c; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav ul a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .Main 
+  {
+    background-color: #00302c;
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .First_Side
+  {
+    margin-left: 120px;
+    margin-right: 200px;
+  }
+  .First_Side a 
+  {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background-color: #2ebf32;
+    padding: 3px;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    
+  }
+  .First_Side a:hover {
+    background-color: #238b28; 
+}
+
+  .First_Side p
+  {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  .First_Side h1
+  {
+    font-size: 75px;
+    color: #009083;
+    margin: 0px;
+    margin-top: 90px;
+  }
+
+  .First_Side h2 
+  {
+    color: #fff;
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 0px;
+    margin-bottom: 70px;
+  }
+
+  .Main img {
+    justify-self: end;
+    width: 100%;
+    max-height: 37.5rem;
+    border-radius: 50px 0 0 50px;
+    object-fit: cover;
+    object-position: left;
+   
+}
+
+ .About_Us
+ { background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    
+ }
+
+ .About_Us h1 
+ {
+    color: #009083;
+    justify-self: center;
+    font-size: 46px;
+    margin-bottom: 20px;
+ }
+
+ .About_Us p 
+ {
+    margin-top: 0px;
+   color: #00302c; 
+   font-size: 20px;
+   text-align: center;
+   margin-left: 200px;
+   margin-right: 200px;
+   font-weight: 500;
+   
+ }
+
+ .About_Us span 
+ {
+    font-weight: bold;
+ }
+
+.Our_Locations
+{
+  display: grid;
+  width: 100%;
+}
+
+.Our_Locations h1 
+{
+  color: #009083;
+  justify-self: center;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.Our_Locations p
+{
+  color: #00302c; 
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 400;
+} 
+.locations
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  column-gap: 160px;
+  row-gap:80px;
+  margin-top: 50px;
+}
+.locations h3
+{
+  text-align: center;
+  padding:30px 40px 30px 40px; 
+  border-radius: 40px;
+  background-color: #00302c;
+  justify-self: center;
+  font-size: 16px;
+  color: #ffff;
+  font-weight: 400;
+  width: 90%;
+}
+
+.Our_Services
+{
+  margin-top: 50px;
+  display: grid;
+  width: 100%;
+}
+
+.Our_Services h1 
+{
+  color: #009083;
+  justify-self: center;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.Our_Services p
+{
+  color: #00302c; 
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 400;
+} 
+
+.Services
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  column-gap: 50px;
+  row-gap:50px;
+  max-width: 1300px;
+}
+
+.Service_Item
+{
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  justify-self: center;
+  width: 100%;
+  
+  
+}
+
+.Service_Item h3
+{
+  font-size: 22px ;
+  color: #009083;
+ 
+}
+
+.Service_Item p {
+  font-size: 16px;
+  color: #00302c; 
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 400;
+}
+
+.Service_Item img 
+{
+  margin-top: 20px;
+  width: 23%;
+}
+
+#paragraph
+{
+  margin-top: 0px;
+}
+
+#h3_Text
+{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+footer
+{
+  width: 100%;
+  background-color: #00302c;
+  justify-items: center;
+  position: relative;
+}
+
+.footer_Container
+{
+  margin-top: 40px;
+  display: flex;
+  column-gap: 100px;
+  
+}
+
+.footer_Container p {
+  margin: 0px;
+}
+.Saulo_Name p
+{
+  font-size: 22px;
+  color: #fff;
+}
+
+#Name
+{
+  font-size: 46px;
+  font-family: 'Satisfy', cursive;
+}
+#Contact
+{
+  margin-top: 50px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 100;
+}
+
+#copyright
+{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.Number p
+{
+  font-size: 16px;
+  color: #fff;
+}
+
+#CRT
+{
+  margin-top: 50px;
+  font-weight: 100;
+}
+
+.Social_Media
+{
+  display: grid;
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  gap: 10px;
+  
+}
+.Social_Media img
+{
+  width: 40px;
+}
+
+@media (max-width: 1600px)
+{
+
+  .First_Side 
+  {
+   margin-right: 100px;
+  }
+
+  .First_Side h1
+  {
+    margin-top: 70px;
+    font-size: 65px;
+  }
+
+  .First_Side h2 
+  {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+
+  .First_Side p 
+  {
+    font-size: 1rem;
+   margin-bottom: 10px;
+  }
+
+  .First_Side a 
+  {
+    font-size: 18px;
+  }
+
+  .Menu_Button
+  {
+    font-size: 17px;
+  }
+
+  nav a
+  {
+    font-size: 24px;
+  }
+
+  .Titulo_Central h2 
+  {
+    font-size: 22px;
+  }
+
+  header img 
+  {
+    height: 80px;
+  }
+
+  nav ul {
+    gap: 60px;
+  }
+
+  .About_Us p 
+  {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 18px;
+  }
+
+  .locations h3
+  {
+    padding:30px 30px 30px 30px; 
+  }
+
+}
+
+  @media (max-width: 1300px)
+  {
+    .Menu_Button
+    {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  
+    nav a
+    {
+      font-size: 24px;
+    }
+    
+    .Titulo_Central
+    {
+      margin-left: 5px;
+    }
+    .Titulo_Central h2 
+    {
+      font-size: 20px;
+      margin-right: 15px;
+      
+    }
+  
+    header img 
+    {
+      height: 80px;
+      margin-left: 10px;
+    }
+  
+    nav ul {
+      gap: 40px;
+      margin-right: 10px;
+    }
+
+    .First_Side
+    {
+      margin-right: 70px;
+      margin-left: 50px;
+    }
+    .First_Side h1
+    {
+      font-size: 55px;
+      margin-top: 45px;
+    }
+
+    .First_Side h2 
+    {
+      font-size: 34px;
+      margin-bottom: 50px;
+    }
+
+    .First_Side p 
+    {
+      font-size: 16px;
+     margin-bottom: 10px;
+    }
+    .First_Side a 
+    {
+      font-size: 16px;
+    }
+
+    .About_Us h1
+    {
+      font-size: 40px;
+    }
+
+    .About_Us p
+    {
+      margin-left: 50px;
+    margin-right: 50px;
+    font-size: 17px;
+    }
+
+    .Our_Locations h1 
+    {
+      font-size: 40px;
+    }
+    .Our_Services h1 
+    {
+      font-size: 40px;
+    }
+
+    .locations
+    {
+      column-gap: 50px;
+    }
+
+    .locations h3
+    {
+      padding:30px 20px 30px 20px; 
+    }
+
+    .footer_Container
+    {
+      column-gap: 40px;
+    }
+  }
+
+  @media (max-width: 1000px){
+
+   .Main
+  {
+    grid-template-columns:1fr ;
+  }
+
+  .Services
+  {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .Service_Item img 
+  {
+    width: 20%;
+  }
+  .locations
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  nav ul {
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    background: white;
+    width: 200px; /* Define o tamanho normal */
+    max-width: 200px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    visibility: hidden; 
+    pointer-events: none; 
+    overflow: hidden; 
+    width: 0; 
+    padding: 0px;
+   
+   
+}
+
+
+.menu-toggle {
+    display: block;
+    margin-right: 20px;
+    color: #00302c; ;
+    margin-left: auto;
+   
+}
+
+.nav-active {
+  opacity: 1;
+  transform: translateX(0);
+  
+  visibility: visible;
+  pointer-events: auto;
+  width: 200px; 
+  padding: 20px;
+}
+
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header > *:last-child {
+  width: 100%; 
+  text-align: center; /* (Opcional) Centraliza o elemento */
+  justify-self: center;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.Menu_Button
+{
+  display: none;
+}
+
+.Titulo_Central h2
+{
+  font-size: 25px;
+  margin-left: 8px;
+}
+
+header img
+{
+  height: 100px;
+}
+
+.First_Side br 
+{
+  display: none;
+}
+
+.Main img
+  {
+    border-radius: 20px 20px 0px 0px ;
+    margin-top: 40px;
+  
+  }
+
+}
+@media (max-width: 900px)
+{
+  .locations
+  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  #Contact
+  {
+    display: none;
+  }
+
+  .footer_Container{
+    display: grid;
+    text-align: center;
+  }
+
+  .About_Us
+  {
+    width: 90%;
+  }
+  
+  .About_Us h1 
+  {
+    font-size: 36px;
+  }
+
+  .About_Us p 
+  {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .About_Us br 
+  {
+    display: none;
+  }
+
+  .Our_Locations h1 
+  {
+    font-size: 36px;
+  }
+
+  .Our_Locations p
+  {
+    font-size: 16px;
+  }
+
+  .locations h3 {
+    font-size:14px;
+  }
+
+  .Our_Services h1 
+  {
+    font-size: 36px;
+  }
+
+  .Our_Services p 
+  {
+    font-size: 16px;
+  }
+
+  .Services
+  {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .First_Side
+  {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  nav a
+    {
+      font-size: 22px;
+    }
+
+  .Saulo_Name p {
+    font-size: 18px;
+  }
+
+  #Name
+  {
+    font-size: 38px;
+  }
+
+  #CRT {
+    margin-top: 10px;
+    
+  }
+
+  .Social_Media
+  {
+    top: 130px;
+    left: 5px;
+  }
+
+  .First_Side a
+  {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 385px)
+{
+  .Our_Locations h1 
+  {
+    font-size: 32px;
+  }
+
+  .First_Side h1 
+  {
+    font-size: 40px;
+  }
+
+  .First_Side h2
+  {
+    font-size: 30px;
+  }
+
+  header img
+{
+  height: 70px;
+}
+
+.Titulo_Central h2 
+{
+  font-size: 20px;
+}
+
+.First_Side a
+{
+  font-size: 16px;
+}
+
+}
+
+
+ 
+
+  
