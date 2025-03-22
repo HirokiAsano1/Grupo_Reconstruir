@@ -753,6 +753,8 @@ header img
   .Our_Locations p
   {
     font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .locations h3 {
@@ -767,6 +769,8 @@ header img
   .Our_Services p 
   {
     font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .Services
@@ -809,6 +813,11 @@ header img
   .First_Side a
   {
     font-size: 22px;
+  }
+
+  .First_Side h2 
+  {
+    margin-right: 10px;
   }
  
 }
