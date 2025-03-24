@@ -34,6 +34,11 @@ header img {
     padding: 0px;
     line-height: 1.2;
 }
+
+.Titulo_Central br
+{
+    display: none;
+}
 .Title {
     color: #00302c;
 }
@@ -819,6 +824,24 @@ header img
   {
     margin-right: 10px;
   }
+
+  .Titulo_Central h2 
+  {
+    font-size: 20px;
+    
+  }
+
+    .Titulo_Central br
+  {
+      display: block;
+  }
+
+  header img
+  {
+    height: 90px;
+  }
+
+  
  
 }
 
@@ -846,7 +869,7 @@ header img
 
 .Titulo_Central h2 
 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .First_Side a
