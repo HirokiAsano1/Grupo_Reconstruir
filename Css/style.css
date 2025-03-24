@@ -841,16 +841,29 @@ header img
     height: 90px;
   }
 
-  
- 
 }
 
 @media (max-width: 385px)
 {
   .Our_Locations h1 
   {
-    font-size: 32px;
+    font-size: 28px;
   }
+  .Our_Locations p 
+  {
+    font-size: 14px;
+  }
+
+  .Our_Services h1 
+  {
+    font-size: 28px;
+  }
+
+  .Our_Services p 
+  {
+    font-size: 14px;
+  }
+  
 
   .First_Side h1 
   {
