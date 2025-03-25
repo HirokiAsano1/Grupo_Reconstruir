@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /admin/
+Disallow: /login/
 Sitemap: https://grupo-reconstruindo-vidas.vercel.app/sitemap.xml
