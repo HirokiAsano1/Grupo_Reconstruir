@@ -236,6 +236,7 @@ nav ul a::after {
 {
   display: grid;
   width: 100%;
+  
 }
 
 .Our_Locations h1 
@@ -262,6 +263,7 @@ nav ul a::after {
   column-gap: 160px;
   row-gap:80px;
   margin-top: 50px;
+  
 }
 .locations h3
 {
@@ -659,7 +661,6 @@ footer
 .nav-active {
   opacity: 1;
   transform: translateX(0);
-  
   visibility: visible;
   pointer-events: auto;
   width: 200px; 
