@@ -265,6 +265,14 @@ nav ul a::after {
   margin-top: 50px;
   
 }
+.locations a 
+{
+  text-decoration: none;
+}
+
+.locations h3:hover {
+  background-color: #00524b; 
+}
 .locations h3
 {
   text-align: center;
