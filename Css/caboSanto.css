@@ -128,3 +128,32 @@ nav ul a::after {
   nav ul a:hover::after {
     transform: scaleX(1);
   }
+
+
+.firstSection
+{
+    width: 95%;
+    background-color: #00302c;
+    margin-top: 20px;
+    height: 220px;
+}
+
+.firstSection h1,p 
+{
+    text-align: center;
+}
+
+.firstSection p 
+{
+    color: #fff;
+    font-size: 22px;
+   margin-top: 0px;
+}
+
+.firstSection h1
+{
+    color: #009083;
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
