@@ -255,6 +255,13 @@ nav ul a::after {
   margin: 0px;
   font-weight: 400;
 } 
+#info
+{
+  margin-top: 20px;
+  color: #00302c;
+  font-size: 14px;
+  font-weight: bold;
+}
 .locations
 {
   display: grid;
