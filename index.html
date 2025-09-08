@@ -22,6 +22,26 @@
     <meta name="author" content="Clínicas Reconstruindo Vidas">
     <meta name="google-site-verification" content="jrnwjkToYDtPUXoLaIlYVspbOPC0ekLlEf6OBovduWk" />
     <link rel="canonical" href="https://www.reconstruindovidas.com/" />
+
+    <!-- Event snippet for Visualização de página conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17023042633/D2aKCLjtrbsaEMmInLU_',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -60,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
         </nav>
 
-        <a class="Menu_Button" href="https://wa.me/5581999589561?text=Olá,%20quero%20mais%20informações!">Fale Conosco
+        <a class="Menu_Button" href="https://wa.me/5581999589561?text=Olá,%20quero%20mais%20informações!" onclick="return gtag_report_conversion(this.href)">Fale Conosco
             no WhatsApp</a>
     </header>
 
