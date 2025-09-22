@@ -11,6 +11,48 @@ body
     font-family: 'Poppins', sans-serif;
     
 }
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* Verde WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* acima do conteúdo */
+  transition: transform 0.15s ease-in-out, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    width: 56px;
+    height: 56px;
+  }
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
 
 header {
     background: #fff;

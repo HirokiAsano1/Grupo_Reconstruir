@@ -7,6 +7,48 @@ body
     font-family: 'Poppins', sans-serif;
     
 }
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* Verde WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* acima do conteúdo */
+  transition: transform 0.15s ease-in-out, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    width: 56px;
+    height: 56px;
+  }
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
 
 header {
     background: #fff;
@@ -135,30 +177,86 @@ nav ul a::after {
     width: 100%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: auto 1fr;
+    /* Evita overflow: colunas flexíveis que podem encolher dentro do viewport */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 32px;
+    align-items: center;
   }
   .First_Side
   {
-    margin-left: 120px;
-    margin-right: 200px;
+    /* Removido grandes margins externas que estouravam a largura total */
+    margin: 40px 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center; /* centraliza h1, h3 e CTAs */
   }
-  .First_Side a 
-  {
-    text-decoration: none;
-    list-style: none;
+  /* Títulos da seção hero (First_Side) */
+  .First_Side h1 {
+    font-size: 56px; /* antes: 75px */
+    color: #009083;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .First_Side h2 {
     color: #fff;
-    background-color: #2ebf32;
-    padding: 3px;
-    border-radius: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 20px;
-    font-weight: 800;
-    
+    font-size: 34px; /* antes: 44px */
+    line-height: 1.15;
+
   }
-  .First_Side a:hover {
-    background-color: #238b28; 
-}
+
+  .First_Side h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* Grupo de botões CTA */
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 16px;
+    justify-content: center; /* centraliza CTAs */
+  }
+
+  .btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .08s ease-in-out;
+    will-change: transform;
+  }
+
+  .btn:active { transform: translateY(1px); }
+
+  .btn-primary { background-color: #2ebf32; color: #fff; }
+  .btn-primary:hover { background-color: #238b28; }
+
+  .btn-teal { background-color: #009083; color: #fff; }
+  .btn-teal:hover { background-color: #007a74; }
+
+  .btn-outline { background-color: transparent; color: #fff; border: 2px solid #fff; }
+  .btn-outline:hover { background-color: rgba(255,255,255,0.12); }
+
+  /* H3 em formato de botão (chips) dentro da First_Side */
+  .First_Side h3 {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 14px 6px 0;
+    border-radius: 9999px;
+    background: rgba(0, 144, 131, 0.18); /* teal translúcido */
+    border: 1px solid #009083;
+    color: #ffffff;
+    font-weight: 600;
+  }
 
   .First_Side p
   {
@@ -168,31 +266,15 @@ nav ul a::after {
     line-height: 1.2;
     margin-bottom: 40px;
   }
-  .First_Side h1
-  {
-    font-size: 75px;
-    color: #009083;
-    margin: 0px;
-    margin-top: 90px;
-  }
-
-  .First_Side h2 
-  {
-    color: #fff;
-    font-size: 44px;
-    line-height: 1.1;
-    margin: 0px;
-    margin-bottom: 70px;
-  }
 
   .Main img {
     justify-self: end;
     width: 100%;
-    max-height: 37.5rem;
+    max-height: 37.50rem;
     border-radius: 50px 0 0 50px;
     object-fit: cover;
-    object-position: left;
-   
+    object-position: left;   
+    
 }
 
  .About_Us
@@ -449,34 +531,18 @@ footer
 
 @media (max-width: 1600px)
 {
-
   .First_Side 
   {
-   margin-right: 100px;
+    margin: 30px 0;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  .First_Side h1
-  {
-    margin-top: 70px;
-    font-size: 65px;
-  }
+  .First_Side h1 { margin-top: 60px; font-size: 50px; }
+  .First_Side h2 { font-size: 30px; margin-bottom: 20px; }
 
-  .First_Side h2 
-  {
-    font-size: 42px;
-    margin-bottom: 50px;
-  }
-
-  .First_Side p 
-  {
-    font-size: 1rem;
-   margin-bottom: 10px;
-  }
-
-  .First_Side a 
-  {
-    font-size: 18px;
-  }
+  .First_Side p { font-size: 1rem; margin-bottom: 10px; }
+  .btn { font-size: 15px; }
 
   .Menu_Button
   {
@@ -553,30 +619,15 @@ footer
 
     .First_Side
     {
-      margin-right: 70px;
-      margin-left: 50px;
+      margin: 24px 0;
+      padding-left: 40px;
+      padding-right: 40px;
     }
-    .First_Side h1
-    {
-      font-size: 55px;
-      margin-top: 45px;
-    }
+    .First_Side h1 { font-size: 46px; margin-top: 40px; }
+    .First_Side h2 { font-size: 28px; margin-bottom: 20px; }
 
-    .First_Side h2 
-    {
-      font-size: 34px;
-      margin-bottom: 50px;
-    }
-
-    .First_Side p 
-    {
-      font-size: 16px;
-     margin-bottom: 10px;
-    }
-    .First_Side a 
-    {
-      font-size: 16px;
-    }
+    .First_Side p { font-size: 16px; margin-bottom: 10px; }
+    .btn { font-size: 15px; }
 
     .About_Us h1
     {
@@ -723,7 +774,7 @@ header img
   {
     border-radius: 40px 40px 0px 0px ;
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 30px; /* mostra mais do fundo verde abaixo da imagem no mobile */
   }
 
 }
@@ -802,8 +853,9 @@ header img
 
   .First_Side
   {
-    margin-left: 10px;
-    margin-right: 0px;
+    margin: 16px 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   nav a
@@ -831,10 +883,8 @@ header img
     left: 5px;
   }
 
-  .First_Side a
-  {
-    font-size: 22px;
-  }
+  .cta-buttons { gap: 10px; }
+  .btn { width: auto; font-size: 16px; padding: 10px 16px; }
 
   .First_Side h2 
   {
@@ -883,12 +933,12 @@ header img
 
   .First_Side h1 
   {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .First_Side h2
   {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   header img
