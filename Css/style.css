@@ -175,7 +175,7 @@ nav ul a::after {
   {
     background-color: #00302c;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
     display: grid;
     /* Evita overflow: colunas flexíveis que podem encolher dentro do viewport */
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -193,7 +193,7 @@ nav ul a::after {
   /* Títulos da seção hero (First_Side) */
   .First_Side h1 {
     font-size: 56px; /* antes: 75px */
-    color: #009083;
+    color: #ffffff;
     margin: 0px;
     margin-top: 20px;
   }
@@ -211,39 +211,63 @@ nav ul a::after {
     font-weight: 500;
   }
 
+  .First_Side p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   /* Grupo de botões CTA */
   .cta-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 20px 0 16px;
+    gap: 100px;
+    margin: 40px 0 80px;
     justify-content: center; /* centraliza CTAs */
   }
 
   .btn {
+   
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 10px 18px;
     border-radius: 9999px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     border: 0;
     transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .08s ease-in-out;
     will-change: transform;
+    ;
+    
   }
+  .btn-teals{
+    background-color: #25D366;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  .btn-teals:hover { background-color: #238b28; }
 
   .btn:active { transform: translateY(1px); }
 
   .btn-primary { background-color: #2ebf32; color: #fff; }
   .btn-primary:hover { background-color: #238b28; }
 
-  .btn-teal { background-color: #009083; color: #fff; }
-  .btn-teal:hover { background-color: #007a74; }
+  .btn-teal {    background-color: #25D366;
+; color: #fff;
+
+}
+  .btn-teal:hover { background-color: #238b28; }
 
   .btn-outline { background-color: transparent; color: #fff; border: 2px solid #fff; }
   .btn-outline:hover { background-color: rgba(255,255,255,0.12); }
+
+  /* Espaço entre ícone WhatsApp (SVG) e texto dentro dos botões CTA */
+  .btn .whatsapp-icon {
+    margin-right: 8px;
+    flex: 0 0 auto;
+  }
 
   /* H3 em formato de botão (chips) dentro da First_Side */
   .First_Side h3 {
@@ -262,8 +286,8 @@ nav ul a::after {
   {
     color: #fff;
     font-size: 20px;
-    font-weight: 100;
-    line-height: 1.2;
+    font-weight: 500; /* engrossa um pouco o texto */
+    line-height: 1.35;
     margin-bottom: 40px;
   }
 
@@ -890,6 +914,10 @@ header img
   {
     margin-right: 10px;
   }
+    .First_Side h1 
+  {
+    font-size: 40px;
+  }
 
   .Titulo_Central h2 
   {
@@ -933,7 +961,7 @@ header img
 
   .First_Side h1 
   {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .First_Side h2
